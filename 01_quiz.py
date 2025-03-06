@@ -12,7 +12,7 @@ else:
 
 score = 0
 
-cpu_input = input("What is CPU..? ").lower()
+cpu_input = (input("What is CPU..? ").lower().strip())
 if cpu_input == "central processing unit":
     print("correct")
     score += 1
@@ -20,7 +20,7 @@ else:
     print("Incorrect!!")
     exit
 
-pu_input = input("What is PU..? ").lower()
+pu_input = input("What is PU..? ").lower().strip()
 if pu_input == "processing unit":
     print("correct")
     score += 1
@@ -28,4 +28,4 @@ else:
     print("Incorrect!!")
     exit
 
-print("Score " + str(score))
+print("Score " + str(score) + "out of 2")
